@@ -25,15 +25,16 @@ if sys.version_info < (2, 7):
 
 setup(
     name='testing.elasticsearch2',
-    version='1.0.0',
+    version='1.0.0+affirm',
     description='automatically setups a elasticsearch instance in a temporary '
-                'directory, and destroys it after testing',
+                'directory, and destroys it after testing. Elasticsearch 5.0 '
+                'support added by removing "multicast" config',
     long_description=open('README.rst').read(),
     classifiers=classifiers,
     keywords=[],
     author='Takeshi Komiya',
     author_email='i.tkomiya at gmail.com',
-    url='https://github.com/tk0miya/testing.elasticsearch',
+    url='https://github.com/Affirm/testing.elasticsearch',
     license='Apache License 2.0',
     packages=find_packages('src'),
     package_dir={'': 'src'},
